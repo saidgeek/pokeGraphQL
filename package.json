@@ -1,0 +1,13 @@
+{
+  "name": "poke-graph-ql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:saidgeek/pokeGraphQL.git",
+  "author": "saidgeek <atarix.010101@gmail.com>",
+  "license": "GNU v3",
+  "dependencies": {
+    "apollo-server": "^2.15.1",
+    "apollo-server-micro": "^2.15.1",
+    "graphql": "^14.7.0"
+  }
+}

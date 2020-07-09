@@ -4,6 +4,7 @@ module.exports = gql`
 
   type Pokemon {
     id: ID!
+    image: String
     name: String
     types: [String]
     hp: Float

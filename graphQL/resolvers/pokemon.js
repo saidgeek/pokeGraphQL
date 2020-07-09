@@ -6,6 +6,7 @@ module.exports = {
       return pokemonData.map((pokemon) => {
         return {
           id: Number(pokemon.Num),
+          image: `https://dev-poke-graphql.saidgeek.land/images/${pokemon.Name.toLocaleLowerCase()}.png`,
           name: pokemon.Name,
           types: [pokemon.Type1, pokemon.Type2],
           hp: Number(pokemon.HP),

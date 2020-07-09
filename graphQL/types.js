@@ -19,6 +19,7 @@ module.exports = gql`
 
   type Query {
     pokemon: [Pokemon]
+    pokemonById(id: ID!): Pokemon
   }
 
 `;

@@ -1,11 +1,11 @@
 const {ApolloServer} = require('apollo-server-micro');
 const typeDefs = require('../graphQL/types');
-const messageResolver = require('../graphQL/resolvers/message');
+const pokemonResolver = require('../graphQL/resolvers/pokemon');
 
 const server = new ApolloServer({
   typeDefs,
   resolvers: Object.assign(
-    messageResolver,
+    pokemonResolver,
   ),
   introspection: true,
 	playground: true,

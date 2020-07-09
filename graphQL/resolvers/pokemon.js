@@ -1,8 +1,10 @@
 const pokemonData = require('../../data/PokemonDataset.json');
 
+const baseUrl = process.env.VERCEL_URL;
+
 const parseData = (data) => ({
   id: Number(data.Num),
-  image: `https://dev-poke-graphql.saidgeek.land/images/${data.Name.toLocaleLowerCase()}.png`,
+  image: `${baseUrl}/images/${data.Name.toLocaleLowerCase()}.png`,
   name: data.Name,
   types: [data.Type1, data.Type2],
   hp: Number(data.HP),

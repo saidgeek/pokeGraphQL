@@ -1,7 +1,6 @@
-const { gql } = require('apollo-server');
+import { gql } from "apollo-server";
 
-module.exports = gql`
-
+export const types = gql`
   type Pokemon {
     id: ID!
     image: String
@@ -21,5 +20,4 @@ module.exports = gql`
     pokemon: [Pokemon]
     pokemonById(id: ID!): Pokemon
   }
-
 `;

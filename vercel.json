@@ -1,5 +1,3 @@
 {
-  "redirects": [
-    { "source": "/", "destination": "/api/graphql" }
-  ]
+  "public": true
 }
